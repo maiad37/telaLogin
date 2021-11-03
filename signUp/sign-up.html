@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign up</title>
+</head>
+<body>
+        <div class="center">
+            <div class="left">
+                <h1>Create an Account</h1>
+                <form class="mt-5">
+                    <input type="text" name="fusername" id="fusername" class="form-control" placeholder="Username" maxlength="15" minlength="4" required>
+                    
+                    <input type="email" name="femail" id="femail" class="form-control mt-4" placeholder="Email" required>
+                    <input type="text" name="fnumber" id="fnumber" class="form-control mt-4" placeholder="Phone number" required>
+                    <input type="password" name="fpass1" id="fpass1" class="form-control mt-4" placeholder="Password"  oninput="checkPass()" required>
+                    <input type="password" name="fpass2" id="fpass2" class="form-control mt-4" placeholder="Retype password" oninput="checkPass()" required> <span class="form-text" id="passMatch"></span>
+                    
+                    <div class="create-account mt-3">
+                    <button class="btn text-white" id="sign-up">Create Account</button>
+                    </div>
+                    <p class="mt-4">Already have an account? <a href="\index.html">Login here!</a></p>
+                </form>
+            </div>
+            <div class="right">
+                 <img src="\images\birds.png" alt="birds" id="birds">
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
