@@ -12,16 +12,20 @@
         <div class="center">
             <div class="left">
                 <h1>Create an Account</h1>
-                <form class="mt-5">
-                    <input type="text" name="fusername" id="fusername" class="form-control" placeholder="Username" maxlength="15" minlength="4" required>
+                <form class="mt-5" id="form">
+
+                    <input type="text" name="fusername" id="fusername" class="form-control" placeholder="Username" maxlength="15" minlength="4">
+
+                    <input type="email" name="femail" id="femail" class="form-control mt-4" placeholder="Email">
+
+                    <input type="text" name="fnumber" id="fnumber" class="form-control mt-4" placeholder="Phone number" >
+
+                    <input type="password" name="fpass1" id="fpass1" class="form-control mt-4" placeholder="Password" oninput="checkPass()" autocomplete="on" >
                     
-                    <input type="email" name="femail" id="femail" class="form-control mt-4" placeholder="Email" required>
-                    <input type="text" name="fnumber" id="fnumber" class="form-control mt-4" placeholder="Phone number" required>
-                    <input type="password" name="fpass1" id="fpass1" class="form-control mt-4" placeholder="Password"  oninput="checkPass()" required>
-                    <input type="password" name="fpass2" id="fpass2" class="form-control mt-4" placeholder="Retype password" oninput="checkPass()" required> <span class="form-text" id="passMatch"></span>
+                    <input type="password" name="fpass2" id="fpass2" class="form-control mt-4" placeholder="Retype password" oninput="checkPass()" autocomplete="on" > <span class="form-text" id="passMatch"></span>
                     
                     <div class="create-account mt-3">
-                    <button class="btn text-white" id="sign-up">Create Account</button>
+                    <button type='submit' class="btn text-white" id="sign-up">Create Account</button>
                     </div>
                     <p class="mt-4">Already have an account? <a href="../index.html">Login here!</a></p>
                 </form>
