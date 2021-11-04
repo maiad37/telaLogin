@@ -12,3 +12,6 @@ function checkPass(){
         passMatch.innerHTML = "Passwords match!"
     }
 }
+
+const register = ()
+
