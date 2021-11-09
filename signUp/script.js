@@ -12,13 +12,13 @@ function checkPass(){
     }
 }
 
-// const register = (e) =>{
-//     e.preventDefault()
+/*const register = (e) =>{
+    e.preventDefault()
 
-//     const {femail, fnumber, fpass1, fpass2} = e.target.elements
+    const {femail, fnumber, fpass1, fpass2} = e.target.elements
 
-//     console.log(femail.value)
-// }
+    console.log(femail.value)
+ }
 
 form.addEventListener("submit", function(e) {
   e.preventDefault();
@@ -27,6 +27,6 @@ form.addEventListener("submit", function(e) {
   console.log(data.fnumber.value)
   console.log(fnumber)
   for (const [name,value] of data) {
-    // console.log(name,value)
+     console.log(name,value)
   }
-});
+});*/
